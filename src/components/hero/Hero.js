@@ -11,8 +11,7 @@ const heroAbout = HERO.map((el) =>
             backgroundSize: "cover",
             backgroundPosition: "center",
             paddingTop: "20px"
-
-        }} className={el.className + el.id}>
+        }} className={"hero__top" + el.id}>
             <h1>{el.title}</h1>
             <p>{el.description}</p>
             <a href="#">{el.learnMore}</a>
@@ -22,7 +21,7 @@ const heroAbout = HERO.map((el) =>
 )
 
 const hero__boottom = HERO__BOTTOM.map((el) =>
-    <div className={"hero__bottom__title" + el.id}>
+    <div key={el.id} className={"hero__bottom__title" + el.id}>
         <div style={{
             textAlign: "center",
             width: "100%",
@@ -31,9 +30,7 @@ const hero__boottom = HERO__BOTTOM.map((el) =>
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            paddingTop: "25px",
-            marginTop: "-38px"
-
+            paddingTop: "45px",
         }}
             className={el.className + el.id}>
             <h1>{el.title}</h1>
@@ -51,9 +48,9 @@ function Hero() {
             <div>
                 {heroAbout}
             </div>
-            {/* <div className='hero__bottom'>
+            <div className='hero__bottom'>
                 {hero__boottom}
-            </div> */}
+            </div>
 
         </div>
     )
