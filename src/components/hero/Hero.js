@@ -30,7 +30,7 @@ const hero__boottom = HERO__BOTTOM.map((el) =>
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            paddingTop: "45px",
+            paddingTop: "45px"
         }}
             className={el.className + el.id}>
             <h1>{el.title}</h1>

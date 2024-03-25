@@ -10,9 +10,30 @@
 
 .hero__top3 {
     position: absolute;
-    left: 0 !important;
-
+    display: flex;
+    justify-content: center;
 }
+
+.hero__top3 h1,
+.hero__top3 p,
+.hero__top3 a {
+    position: absolute;
+    bottom: 80px;
+}
+
+.hero div h1 {
+    font-size: 35px;
+}
+
+.hero__top3 h1 {
+    font-size: 35px;
+    margin: 45px 0;
+}
+
+.hero__top3 p {
+    margin: 25px 0;
+}
+
 
 
 /* ----------------------------------------- */
